@@ -39,9 +39,9 @@ def series_detail(token):
                     "num": 25,
                     "video_list": [
                         {
-                            "provider": "http://localhost:6001/anime/62696d6962696d697c32363931/0/0",
+                            "info": urljoin(request.host_url, "/anime/62696d6962696d697c32363931/0/0"),
                             "name": "Episode 01",
-                            "player": "http://localhost:6001/anime/62696d6962696d697c32363931/0/0/player"
+                            "player": urljoin(request.host_url, "/anime/62696d6962696d697c32363931/0/0/player")
                         }
                     ]
                 }
@@ -58,7 +58,7 @@ def episode_playback_info(token, playlist, episode):
             "format": "mp4",
             "lifetime": 86399,
             "proxy_url": urljoin(request.host_url, "/proxy/anime/62696d6962696d697c32363931/0/0"),
-            "raw_url": urljoin(request.host_url, "/anime/62696d6962696d697c32363931/0/0/url"),
+            "raw_url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
             "size": 10000000
         }
     )
