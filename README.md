@@ -9,10 +9,14 @@ Woof 是一个多媒体数据标准，为多媒体内容提供元数据格式标
 
 快速开始
 --
-1. 下载一个适合你的设备的刮削工具
-2. 对本地的多媒体文件进行扫描
-3. 进行刮削操作，刮削所得元数据将储存在对应多媒体文件所在目录
-4. 连接至 Woof Server 浏览成果
+1. [下载刮削工具](https://github.com/WoofMedia/WoofProject/releases)
+2. 下载 Woof 客户端
+   1. [tvOS 客户端 Beta](https://testflight.apple.com/join/1ZonSP4g)
+3. 使用刮削工具，对本地的多媒体文件进行扫描
+4. 对寻找到的多媒体文件进行刮削操作，刮削所得的元数据，将储存在对应多媒体文件所在目录
+5. 使用 Woof 客户端浏览成果，Woof 客户端支持两种访问方式
+   1. 文件协议（如 SMB、AFP、NFS）
+   2. HTTP WoofAPI
 
 讨论
 --
