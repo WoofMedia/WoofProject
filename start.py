@@ -12,17 +12,18 @@ def hello_world():
 
 @app.route("/anime/search/<string:keyword>")
 def search_series(keyword):
-    return jsonify(
+    data = [
         {
-            "category": "Fantasy",
+            "category": "Fantasy %s" % index,
             "cover_url": "https://source.unsplash.com/random/300x200",
             "description": "Description heree",
             "module": "provider_name",
             "score": 80,
-            "title": "Series Name",
+            "title": "Series %s" % index,
             "url": urljoin(request.host_url, "/anime/62696d6962696d697c32363931")
-        }
-    )
+        } for index in range(10)
+    ]
+    return jsonify(data)
 
 
 @app.route("/anime/<string:token>")
